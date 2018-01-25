@@ -7,6 +7,18 @@ use Illuminate\Http\Request;
 
 
 class PostsController extends Controller {
+
+    // function __constructor(){
+
+    //     //protect all functons
+    //     $this->middleware('auth');
+
+    //     //protect only some functions
+    //     $this->middleware('auth', ['only' => ['add', 'view']]);
+    // }
+
+
+
     public function createPost(Request $request) {
         $post = Post::create($request->all());
 
